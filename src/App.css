@@ -1,0 +1,181 @@
+.app {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 64px 24px 72px;
+}
+.intro {
+  margin-bottom: 38px;
+}
+
+h1,
+h2 {
+  color: #20243b;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+}
+h1 {
+  font-size: 60px;
+  letter-spacing: -0.05em;
+  line-height: 1;
+}
+h2 {
+  font-size: 1.6rem;
+}
+
+.panel {
+  background: #fff;
+  border: 1px solid #e8e9f1;
+  border-radius: 16px;
+  padding: 28px;
+}
+.form-panel {
+  margin-bottom: 22px;
+}
+.section-heading {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.student-form {
+  align-items: end;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1.2fr 0.55fr 1fr 1.35fr auto;
+}
+label {
+  color: #555b75;
+  display: grid;
+  font-size: 0.78rem;
+  font-weight: 700;
+  gap: 7px;
+}
+input {
+  background: #fbfbfd;
+  border: 1px solid #dfe1eb;
+  border-radius: 8px;
+  color: #252a41;
+  font: inherit;
+  font-size: 0.93rem;
+  outline: none;
+  padding: 11px 12px;
+  width: 100%;
+}
+input:focus {
+  border-color: #6672d8;
+}
+button {
+  border-radius: 8px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.88rem;
+  font-weight: 700;
+  padding: 11px 17px;
+  transition:
+    transform 0.15s,
+    background 0.15s;
+}
+button:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+button:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+.add-button {
+  background: #3441a2;
+  border: 1px solid #3441a2;
+  color: white;
+  white-space: nowrap;
+}
+.add-button:hover:not(:disabled) {
+  background: #283487;
+}
+.student-count {
+  background: #eef0ff;
+  border-radius: 20px;
+  color: #4653b4;
+  font-size: 0.78rem;
+  font-weight: 800;
+  padding: 7px 11px;
+}
+.table-panel {
+  padding-bottom: 12px;
+}
+.table-wrap {
+  overflow-x: auto;
+}
+table {
+  border-collapse: collapse;
+  min-width: 760px;
+  text-align: left;
+  width: 100%;
+}
+th {
+  border-bottom: 1px solid #e6e7ee;
+  color: #8b8fa3;
+  font-size: 0.7rem;
+  letter-spacing: 0.07em;
+  padding: 0 14px 13px;
+  text-transform: uppercase;
+}
+td {
+  border-bottom: 1px solid #eff0f5;
+  color: #62677d;
+  font-size: 0.9rem;
+  padding: 16px 14px;
+}
+tbody tr:last-child td {
+  border-bottom: 0;
+}
+.student-name {
+  color: #262b43;
+  font-weight: 800;
+}
+.delete-button {
+  background: #fff2f2;
+  border: 1px solid #ffd5d5;
+  color: #c14343;
+  padding: 7px 11px;
+}
+.delete-button:hover {
+  background: #ffe6e6;
+}
+.message {
+  color: #737890;
+  margin: 32px 0;
+  text-align: center;
+}
+.error-message {
+  background: #fff3f3;
+  border: 1px solid #ffdada;
+  border-radius: 8px;
+  color: #b54a4a;
+  margin: 0 0 18px;
+  padding: 10px 13px;
+  text-align: left;
+}
+.sr-only {
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+@media (max-width: 860px) {
+  .app-shell {
+    padding: 38px 16px;
+  }
+  .panel {
+    padding: 22px 16px;
+  }
+  .student-form {
+    grid-template-columns: 1fr 1fr;
+  }
+  .add-button {
+    grid-column: span 2;
+  }
+}
+

@@ -1,0 +1,25 @@
+{
+  "students": [
+    {
+      "id": "e95b",
+      "name": "Jithu P.R",
+      "age": 26,
+      "course": "MERN",
+      "email": "jithu@gmail.com"
+    },
+    {
+      "id": "3eba",
+      "name": "Jason B",
+      "age": 21,
+      "course": "MERN",
+      "email": "jason@gmail.com"
+    },
+    {
+      "id": "87f0",
+      "name": "Smitha Raju",
+      "age": 34,
+      "course": "Data",
+      "email": "smitha@gmail.com"
+    }
+  ]
+}
