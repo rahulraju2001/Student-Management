@@ -20,6 +20,20 @@
       "age": 34,
       "course": "Data",
       "email": "smitha@gmail.com"
+    },
+    {
+      "id": "4af6",
+      "name": "Raju",
+      "age": 26,
+      "course": "Cyber",
+      "email": "raju@gmail.com"
+    },
+    {
+      "id": "27a7",
+      "name": "Poulose",
+      "age": 25,
+      "course": "Cyber",
+      "email": "poulose@gmail.com"
     }
   ]
 }

@@ -155,27 +155,3 @@ tbody tr:last-child td {
   padding: 10px 13px;
   text-align: left;
 }
-.sr-only {
-  clip: rect(0, 0, 0, 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-@media (max-width: 860px) {
-  .app-shell {
-    padding: 38px 16px;
-  }
-  .panel {
-    padding: 22px 16px;
-  }
-  .student-form {
-    grid-template-columns: 1fr 1fr;
-  }
-  .add-button {
-    grid-column: span 2;
-  }
-}
-

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 
-const API_URL = "http://localhost:3001/students";
+const API_URL = `${import.meta.env.VITE_API_URL}/students`;
 const emptyStudent = { name: "", age: "", course: "", email: "" };
 
 function App() {
@@ -13,7 +13,6 @@ function App() {
 
   async function fetchStudents() {
     try {
-      setLoading(true);
       setError("");
       const response = await fetch(API_URL);
       if (!response.ok) throw new Error("Could not load students.");
@@ -26,8 +25,7 @@ function App() {
   }
 
   useEffect(() => {
-    const requestId = window.setTimeout(fetchStudents, 0);
-    return () => window.clearTimeout(requestId);
+    fetchStudents();
   }, []);
 
   function handleChange(event) {
